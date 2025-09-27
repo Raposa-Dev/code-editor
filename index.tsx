@@ -1,7 +1,11 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import { ThemeProvider } from './hooks/useTheme';
+import { SnippetsProvider } from './hooks/useSnippets';
+import { FileSystemProvider } from './hooks/useFileSystem';
+import { AIStatusProvider } from './hooks/useAIStatus';
+import { EditorStatusProvider } from './hooks/useEditorStatus';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -11,6 +15,16 @@ if (!rootElement) {
 const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider>
+      <SnippetsProvider>
+        <AIStatusProvider>
+          <EditorStatusProvider>
+            <FileSystemProvider>
+              <App />
+            </FileSystemProvider>
+          </EditorStatusProvider>
+        </AIStatusProvider>
+      </SnippetsProvider>
+    </ThemeProvider>
   </React.StrictMode>
 );

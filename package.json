@@ -1,5 +1,5 @@
 {
-  "name": "gemini-ai-code-editor",
+  "name": "mimix-ide",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,9 +9,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react-dom": "^19.1.1",
     "react": "^19.1.1",
-    "@google/genai": "^1.20.0"
+    "react-dom": "^19.1.1",
+    "@google/genai": "^1.21.0",
+    "xterm": "^5.3.0",
+    "xterm-addon-fit": "^0.8.0",
+    "@uiw/codemirror-theme-vscode": "^4.25.2",
+    "@uiw/codemirror-theme-github": "^4.25.2",
+    "@uiw/codemirror-theme-dracula": "^4.25.2",
+    "@uiw/codemirror-theme-solarized": "^4.25.2",
+    "@uiw/codemirror-theme-okaidia": "^4.25.2",
+    "@uiw/codemirror-theme-nord": "^4.25.2",
+    "@codemirror/lang-javascript": "^6.2.4",
+    "@codemirror/autocomplete": "^6.17.0",
+    "@uiw/react-codemirror": "^4.25.2",
+    "@codemirror/state": "^6.5.2"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

@@ -1,5 +1,5 @@
 {
-  "name": "Gemini AI Code Editor",
-  "description": "A minimalist code editor with a clean, intuitive interface and native Gemini AI integration for intelligent code completion, analysis, refactoring, and generation. Optimized for a distraction-free coding experience.",
+  "name": "Mimix IDE",
+  "description": "A minimalist, open-source IDE inspired by VS Code, built with React and powered by the Gemini API for intelligent coding assistance. It features a file explorer, a tabbed code editor, an integrated terminal, and an AI panel for code generation and refactoring.",
   "requestFramePermissions": []
 }
